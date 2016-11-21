@@ -4,7 +4,9 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace TutorQuickXAML
 {
     public partial class App : Application
@@ -12,7 +14,6 @@ namespace TutorQuickXAML
         public App()
         {
             InitializeComponent();
-
             MainPage = new TutorQuickXAML.MainPage();
         }
 
