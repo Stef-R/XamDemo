@@ -9,9 +9,9 @@
   <ContentPage.Content>
     <StackLayout>
       <Label Text="Enter a Phoneword"></Label>
-      <Entry/>
-      <Button/>
-      <Button/>
+      <Entry x:Name="phoneNuberText" Text="1-855-XAMARIN"/>
+      <Button x:Name="translateButom" Text="Translate"  />
+      <Button x:Name="callButtom" Text="Call" />
     </StackLayout>
   </ContentPage.Content>
 </ContentPage>
