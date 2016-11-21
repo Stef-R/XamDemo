@@ -26,6 +26,17 @@ namespace TutorQuickXAML
                 callButtom.Text = "Call";
             }
         }
+        async void OnCall(object sender, EventArgs e)
+        {
+            if (await this.DisplayAlert(
+                "Dial a Number",
+                "Woud you like to call"+ translatedNumber+ "?",
+                "Yes","No"))
+            {
+                //var dialer = DependencyService.Get<IDialer>();
+            }
+
+        }
 
 
     }
