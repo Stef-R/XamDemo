@@ -10,11 +10,14 @@
                 WinPhone="20,20,20,20"/>    
   </ContentPage.Padding>
   <ContentPage.Content>
-    <StackLayout>
+    <StackLayout VerticalOptions="FillAndExpand"
+                 HorizontalOptions="FillAndExpand"
+                 Orientation="Vertical"
+                 Spacing="15">
       <Label Text="Enter a Phoneword"></Label>
       <Entry x:Name="phoneNuberText" Text="1-855-XAMARIN"/>
-      <Button x:Name="translateButom" Text="Translate"  />
-      <Button x:Name="callButtom" Text="Call" />
+      <Button x:Name="translateButom" Text="Translate" Clicked="OnTranslate" />
+      <Button x:Name="callButtom" Text="Call"  />
     </StackLayout>
   </ContentPage.Content>
 </ContentPage>
