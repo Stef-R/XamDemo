@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Calc"
+             x:Class="Calc.MainPage">
+  <StackLayout x:Name="outerlayout" Orientation="Vertical" >
+    <Frame>
+      <Label Text="Welcome to Calulator!"
+           VerticalOptions="Center"
+           HorizontalOptions="Center" />
+    </Frame>
+    <StackLayout x:name="tasturLinie1" Orientation="Horizontal">
+      <Button x:name="digi1" Text="1"  Clicked="OnDigitClick"  />
+      <Button Text="2"    />
+      <Button Text="3"    />
+    </StackLayout>
+    <StackLayout x:name="tasturLinie2" Orientation="Horizontal">
+      <Button Text="4"    />
+      <Button Text="5"    />
+      <Button Text="6"    />
+    </StackLayout>
+    <StackLayout x:name="tasturLinie3" Orientation="Horizontal">
+      <Button Text="7"    />
+      <Button Text="8"    />
+      <Button Text="9"    />
+    </StackLayout>
+  </StackLayout>
+
+</ContentPage>
