@@ -21,17 +21,32 @@ namespace TutorQuickXAML
                     newNumber.Append(c);
                 else
                 {
-                    var result = 0;//....
+                    var result = TranslateToNumber(c);
+                    if (result != null)
+                        newNumber.Append(result);
+                    // Bad char ?
+                    else
+                        return null;
                 }
             }
+            return newNumber.ToString();
         }
+
+        static bool Contains(this string keyString, char c)
+        {
+            return keyString.IndexOf(c) >= 0;
+        }
+
+        static readonly string[] digits = {
+            "ABC","DEF","GHI","JKL","MNO","PQRS","TUV","WXYZ"
+        };
 
         static int? TranslateToNumber(char c)
         {
-            for (int i = 0; i < length; i++)
+            for (int i = 0; i < digits.Length ; i++)
             {
-                if (true)
-                    return 0;
+                if (digits[i].Contains(c))
+                    return 2 + i;
             }
             return null;
         }
