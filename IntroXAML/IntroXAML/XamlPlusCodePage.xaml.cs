@@ -12,8 +12,17 @@ namespace IntroXAML
     {
         public XamlPlusCodePage()
         {
-            InitializeComponent();
-
+            InitializeComponent();           
         }
+        void OnSliderValueChanged(object sender, ValueChangedEventArgs args)
+        {
+            valueLabel.Text = ((Slider)sender).Value.ToString("F3");
+            //valueLabel.Text = args.NewValue.ToString("F3");            
+        }
+        void OnButtomClicked(object sender, EventArgs args)
+        {
+            //valueLabel.Text = args.NewValue.ToString("F3");            
+        }
+
     }
 }

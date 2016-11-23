@@ -4,14 +4,18 @@
              x:Class="IntroXAML.XamlPlusCodePage"
              Title="XAML + code page">
   <StackLayout>
-    <Slider VerticalOptions="CenterAndExpand"/>
-    <Label Text="A simple Label" 
+    <Slider x:Name="Slider"
+            VerticalOptions="CenterAndExpand"
+            ValueChanged="OnSliderValueChanged"/>
+    <Label x:Name="valueLabel"
+           Text="A simple Label" 
            Font="Large"
            HorizontalOptions="Center" 
            VerticalOptions="CenterAndExpand"   />
     <Button Text="Click me!"
             HorizontalOptions="Center"
-            VerticalOptions="CenterAndExpand"/>
+            VerticalOptions="CenterAndExpand"
+            Clicked="OnButtomClicked"/>
   </StackLayout>
   
   
