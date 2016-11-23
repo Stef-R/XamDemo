@@ -6,7 +6,7 @@
              Title="Hello XAML Page"
              Padding="10,40,10,10">
 
-  <Label Text="Hello, XAML!"
+  <Label Text="&#x201C;Hello, XAML!&#x201D;"
          VerticalOptions="Start"
          HorizontalOptions="Center"
          Rotation="-15"
