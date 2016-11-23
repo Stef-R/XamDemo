@@ -19,8 +19,12 @@ namespace IntroXAML
             valueLabel.Text = ((Slider)sender).Value.ToString("F3");
             //valueLabel.Text = args.NewValue.ToString("F3");            
         }
-        void OnButtomClicked(object sender, EventArgs args)
+        async void OnButtomClicked(object sender, EventArgs args)
         {
+            Button button = (Button)sender;
+            await DisplayAlert("Clicked!",
+                "The button labeled '"+button.Text + "' has been clicked",
+                "OK");
             //valueLabel.Text = args.NewValue.ToString("F3");            
         }
 
