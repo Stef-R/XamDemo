@@ -3,26 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Calc"
              x:Class="Calc.MainPage">
-  <StackLayout x:Name="outerlayout" Orientation="Vertical" >
+  <StackLayout x:Name="outerlayout" Orientation="Vertical" BackgroundColor="Yellow" >
     <Frame>
-      <Label Text="Welcome to Calulator!"
+      <Label x:Name="textLabel" Text="Welcome to Calulator!"
            VerticalOptions="Center"
-           HorizontalOptions="Center" />
+           HorizontalOptions="Center" BackgroundColor="Gray" />
     </Frame>
-    <StackLayout x:name="tasturLinie1" Orientation="Horizontal">
+    <StackLayout x:Name="tasturLinie1" Orientation="Horizontal">
       <Button x:name="digi1" Text="1"  Clicked="OnDigitClick"  />
-      <Button Text="2"    />
-      <Button Text="3"    />
+      <Button Text="2" Clicked="OnDigitClick" />
+      <Button Text="3" Clicked="OnDigitClick" />
     </StackLayout>
     <StackLayout x:name="tasturLinie2" Orientation="Horizontal">
-      <Button Text="4"    />
-      <Button Text="5"    />
-      <Button Text="6"    />
+      <Button Text="4" Clicked="OnDigitClick" />
+      <Button Text="5" Clicked="OnDigitClick" />
+      <Button Text="6" Clicked="OnDigitClick" />
     </StackLayout>
     <StackLayout x:name="tasturLinie3" Orientation="Horizontal">
-      <Button Text="7"    />
-      <Button Text="8"    />
-      <Button Text="9"    />
+      <Button Text="7" Clicked="OnDigitClick" />
+      <Button Text="8" Clicked="OnDigitClick" />
+      <Button Text="9" Clicked="OnDigitClick" />
     </StackLayout>
   </StackLayout>
 

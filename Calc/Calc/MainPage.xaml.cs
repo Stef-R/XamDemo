@@ -15,7 +15,9 @@ namespace Calc
         }
         void OnDigitClick(object sender,EventArgs e)
         {
-
+            //var senderButton = (Button)sender;
+            var senderButton = sender as Button;
+            //textLabel = senderButton.Text;
             return;
         }
     }
