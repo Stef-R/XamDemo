@@ -13,7 +13,8 @@ namespace IntroXAML
         {
             InitializeComponent();
 
-            MainPage = new IntroXAML.MainPage();
+            //MainPage = new IntroXAML.MainPage();
+            MainPage = new IntroXAML.XamlPlusCodePage();
         }
 
         protected override void OnStart()
