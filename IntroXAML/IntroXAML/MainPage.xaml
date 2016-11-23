@@ -2,10 +2,18 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:IntroXAML"
-             x:Class="IntroXAML.MainPage">
+             x:Class="IntroXAML.MainPage"
+             Title="Hello XAML Page"
+             Padding="10,40,10,10">
 
-  <Label Text="Welcome to Xamarin Forms!"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
+  <Label Text="Hello, XAML!"
+         VerticalOptions="Start"
+         HorizontalOptions="Center"
+         Rotation="-15"
+         IsVisible="True"
+         FontSize="Large"
+         FontAttributes="Bold"
+         TextColor="Aqua"
+         />
 
 </ContentPage>
