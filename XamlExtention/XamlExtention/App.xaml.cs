@@ -14,7 +14,8 @@ namespace XamlExtention
             InitializeComponent();
 
             //MainPage = new XamlExtention.MainPage();
-            MainPage = new XamlExtention.StaticMarkPage();
+            //MainPage = new XamlExtention.StaticMarkPage();
+            MainPage = new XamlExtention.ConstraintEks();
         }
 
         protected override void OnStart()
