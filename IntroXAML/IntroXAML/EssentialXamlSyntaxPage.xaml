@@ -4,9 +4,9 @@
              x:Class="IntroXAML.EssentialXamlSyntaxPage"
              Title="Grid Demo Page">
   
-  <ContentPage.Padding>
+  <!--<ContentPage.Padding>
     
-  </ContentPage.Padding>
+  </ContentPage.Padding>-->
   <Grid>
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto"/>
@@ -25,22 +25,33 @@
          BackgroundColor="Blue"/>
   
   <BoxView Color="Silver"
-           />
+           HeightRequest="0"
+           Grid.Row="0"    Grid.Column="1"/>
+  
   <BoxView Color="Teal"
-           />
+           Grid.Row="1"    Grid.Column="0"/>
+  
   <Label Text="Leftove space"
+         Grid.Row="1"    Grid.Column="1"
          TextColor="Purple"
          BackgroundColor="Aqua"
-         />
+         HorizontalTextAlignment="Center"
+         VerticalTextAlignment="Center"/>
+  
   <Label Text="Span two rows (or more if you want)"
+         Grid.Row="0"    Grid.Column="2" Grid.RowSpan="2"
          TextColor="Yellow"
          BackgroundColor="Blue"
-         />
+         HorizontalTextAlignment="Center"
+         VerticalTextAlignment="Center"/>
+  
   <Label Text="Span two colums"
+         Grid.Row="2"    Grid.Column="0" Grid.ColumnSpan="2"
          TextColor="Blue"
          BackgroundColor="Yellow"
          />
   <Label Text="Fixed 100x100"
+         Grid.Row="2"    Grid.Column="2"
          TextColor="Aqua"
          BackgroundColor="Red"
          />
