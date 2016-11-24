@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-using Xamarin.Forms;
+using Xamarin.Forms; 
+
 
 namespace IntroXAML
 {
@@ -14,7 +15,8 @@ namespace IntroXAML
             InitializeComponent();
 
             //MainPage = new IntroXAML.MainPage();
-            MainPage = new IntroXAML.XamlPlusCodePage();
+            //MainPage = new IntroXAML.XamlPlusCodePage();
+            MainPage = new IntroXAML.EssentialXamlSyntaxPage();
         }
 
         protected override void OnStart()

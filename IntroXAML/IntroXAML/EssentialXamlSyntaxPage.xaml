@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IntroXAML.EssentialXamlSyntaxPage"
+             Title="Grid Demo Page">
+  
+  <ContentPage.Padding>
+    
+  </ContentPage.Padding>
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="100"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto"/>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="100"/>
+    </Grid.ColumnDefinitions>
+  </Grid>
+  <Label Text="Autosized cell"
+         Grid.Row="0"    Grid.Column="0"
+         TextColor="White"
+         BackgroundColor="Blue"/>
+  
+  <BoxView Color="Silver"
+           />
+  <BoxView Color="Teal"
+           />
+  <Label Text="Leftove space"
+         TextColor="Purple"
+         BackgroundColor="Aqua"
+         />
+  <Label Text="Span two rows (or more if you want)"
+         TextColor="Yellow"
+         BackgroundColor="Blue"
+         />
+  <Label Text="Span two colums"
+         TextColor="Blue"
+         BackgroundColor="Yellow"
+         />
+  <Label Text="Fixed 100x100"
+         TextColor="Aqua"
+         BackgroundColor="Red"
+         />
+</ContentPage>
