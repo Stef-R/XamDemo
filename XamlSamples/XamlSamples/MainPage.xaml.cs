@@ -11,6 +11,9 @@ namespace XamlSamples
     {
         public MainPage()
         {
+            // alt binding skal evt. så et andet sted
+            //ClockViewModel cm = new ClockViewModel();
+            //BindingContext = cm;
             InitializeComponent();
         }
     }
