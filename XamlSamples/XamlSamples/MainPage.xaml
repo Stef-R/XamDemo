@@ -3,9 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:sys="clr-namespace:System;assembly=mscorlib"
              xmlns:local="clr-namespace:XamlSamples"
-             x:Class="XamlSamples.MainPage">
+             x:Class="XamlSamples.MainPage"
+             Title="Clock Page">
+
+  <Label Text="{Binding DateTime,
+                        StringFormat='{0:T}'}"
+         FontSize="Large"
+         HorizontalOptions="Center"
+         VerticalOptions="Center">
+    <Label.BindingContext>
+      <local:ClockViewModel />
+    </Label.BindingContext>
+  </Label>
   
-  <StackLayout BindingContext="{x:Static sys:DateTime.Now}"
+  <!--<StackLayout BindingContext="{x:Static sys:DateTime.Now}"
                HorizontalOptions="Center"
                VerticalOptions="Center">
 
@@ -14,8 +25,7 @@
     <Label Text="{Binding Day, StringFormat='The day is {0}'}" />
     <Label Text="{Binding StringFormat='The time is {0:T}'}" />
 
-  </StackLayout>
-
+  </StackLayout>-->
   <!--<Label Text="Welcome to Xamarin Forms!"
            VerticalOptions="Center"
            HorizontalOptions="Center" />-->
