@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+using LoginMVVM.VievModels;
+using LoginMVVM.Pages;
+
 using Xamarin.Forms;
 
 namespace LoginMVVM
@@ -13,7 +16,9 @@ namespace LoginMVVM
         {
             InitializeComponent();
 
-            MainPage = new LoginMVVM.MainPage();
+            //MainPage = new LoginMVVM.MainPage();
+            var viewmodel = new LoginViwModel();
+            MainPage = new LoginPage(viewmodel);
         }
 
         protected override void OnStart()

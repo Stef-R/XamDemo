@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LoginMVVM.VievModels 
 {
-    class LoginViwModel : INotifyPropertyChanged
+    public class LoginViwModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
