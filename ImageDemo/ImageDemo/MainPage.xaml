@@ -4,8 +4,9 @@
              xmlns:local="clr-namespace:ImageDemo"
              x:Class="ImageDemo.MainPage">
 
-  <Label Text="Welcome to image Forms!"
-           VerticalOptions="Center"
-           HorizontalOptions="Center" />
+  <StackLayout>
+    <Image Source="luisa.jpg" 
+    />
+    </StackLayout>
 
 </ContentPage>
