@@ -13,8 +13,8 @@ namespace LoginMVVM.VievModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private string versionsText="Ver 0.0.0";
-        private string statusText = "indtast telefonnummer";        
+        private string versionsText="Ver start 0.0.0";
+        private string statusText = "Indtast telefonnummer";        
         private bool loginOk = false;
         private string login = "";
         
@@ -46,7 +46,7 @@ namespace LoginMVVM.VievModels
                 {
                     login = value;
                     OnProertyChanged();
-                    if (login.Length>=8)
+                    if (Login!=null && Login.Length>=8)
                     {
                         LoginOk = true;
                         StatusText = "Ok a logge ind";

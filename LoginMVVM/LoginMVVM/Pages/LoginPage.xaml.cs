@@ -20,9 +20,9 @@ namespace LoginMVVM.Pages
 
             BindingContext = this.loginViewModel;
 
-            loginKnap.SetBinding(Button.IsEnabledProperty, "LoginOk", BindingMode.OneWay);
+            //loginKnap.SetBinding(Button.IsEnabledProperty, "LoginOk", BindingMode.OneWay);
 
-            loginEntry.SetBinding<LoginViwModel>(Entry.TextProperty, vm=>vm.StatusText, BindingMode.TwoWay);
+            //loginEntry.SetBinding<LoginViwModel>(Entry.TextProperty, vm=>vm.StatusText, BindingMode.TwoWay);
             InitializeComponent();
 
         }

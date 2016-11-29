@@ -5,11 +5,12 @@
 
   <StackLayout>
     <!--<Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />-->
-    <Label x:Name="verionsTekst" Text="Ver 1.0" />
+    <Label x:Name="verionsTekst" Text="{Binding VersionText}" />
     <Label x:Name="statusTekst" Text="Klar til..." />
-    <Entry x:Name="loginEntry" Text=""/>
+    <Entry x:Name="loginEntry" Text="{Binding Login , Mode=OneWayToSource}"/>
     
-    <Button x:Name="loginKnap" Text="Login" />
+    <Button x:Name="loginKnap" Text="Login"  />  
+    <!-- IsEnabledProperty="" -->
     
   </StackLayout>
 </ContentPage>
