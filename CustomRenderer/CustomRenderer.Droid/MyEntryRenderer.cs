@@ -25,7 +25,7 @@ namespace CustomRenderer.Droid
 
             if (Control != null)
             {
-                Control.SetBackgroundColor(Android.Graphics.Color.LightGreen);
+                Control.SetBackgroundColor(global::Android.Graphics.Color.LightGreen);
             }
         }
 
