@@ -6,9 +6,9 @@
 
   <StackLayout>
     <Label  Text="0-300" />
-    <Slider Minimum="0" Maximum="300" />
+    <Slider x:Name="sliderStor" Minimum="0" Maximum="300" />
     <Label  Text="0-3" />
-    <Slider Minimum="0" Maximum="3" />
+    <Slider x:Name="sliderLille" Minimum="0" Maximum="3" />
 
   </StackLayout> 
   

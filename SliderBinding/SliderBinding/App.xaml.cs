@@ -11,6 +11,7 @@ namespace SliderBinding
 {
     public partial class App : Application
     {
+        static private SliderConverter sb = new SliderConverter();
         public App()
         {
             InitializeComponent();
