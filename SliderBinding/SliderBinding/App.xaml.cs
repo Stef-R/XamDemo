@@ -5,6 +5,8 @@ using System.Text;
 
 using Xamarin.Forms;
 
+using SliderBinding;
+
 namespace SliderBinding
 {
     public partial class App : Application
@@ -12,8 +14,8 @@ namespace SliderBinding
         public App()
         {
             InitializeComponent();
-
-            MainPage = new SliderBinding.MainPage();
+            MainViewModel vm = new MainViewModel();
+            MainPage = new SliderBinding.MainPage(vm);
         }
 
         protected override void OnStart()
