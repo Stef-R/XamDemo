@@ -8,11 +8,11 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.Runtime.CompilerServices;
 
-namespace SliderBinding 
+namespace SliderBinding
 {
     public class MainViewModel : INotifyPropertyChanged
     {
-        private double myValue = 1;
+        private double myValue = 10;
 
         public double MyValue
         {
@@ -23,8 +23,11 @@ namespace SliderBinding
 
             set
             {
-                myValue = value;
-                OnPropertyChangedEvent();
+                if (myValue != value)
+                {
+                    myValue = value;
+                    OnPropertyChangedEvent();
+                }
             }
         }
 
@@ -36,11 +39,11 @@ namespace SliderBinding
         //    if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
         //}
 
-        private void OnPropertyChangedEvent([CallerMemberName] string propertyName="")
+        private void OnPropertyChangedEvent([CallerMemberName] string propertyName = "")
         {
             var ev = PropertyChanged;
 
-            if (ev !=null)
+            if (ev != null)
             {
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }

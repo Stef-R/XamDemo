@@ -10,15 +10,15 @@ namespace SliderBinding
 {
     public partial class MainPage : ContentPage
     {
-        private MainViewModel vm;
+        private MainViewModel svm;
         private SliderConverter sc = new SliderConverter();
-        public MainPage(MainViewModel vm)
+        public MainPage(MainViewModel svm)
         {
-            this.vm = vm;
-            BindingContext = this.vm;
-            slider1.SetBinding<MainViewModel>(Slider.ValueProperty, vm1 => vm1.MyValue, BindingMode.OneWay, sc);
-            slider2.SetBinding<MainViewModel>(Slider.ValueProperty, vm1 => vm1.MyValue, BindingMode.TwoWay);
+            this.svm = svm;
+            BindingContext = this.svm;
             InitializeComponent();
+            slider1.SetBinding<MainViewModel>(Slider.ValueProperty, vm => vm.MyValue, BindingMode.OneWay);
+            slider2.SetBinding<MainViewModel>(Slider.ValueProperty, vm => vm.MyValue, BindingMode.TwoWay);
         }
     }
 }
